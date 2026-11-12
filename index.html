@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="차우견의 첫 번째 자기소개 사이트입니다.">
+  <title>차우견 | 나의 첫 웹사이트</title>
+  <!-- 같은 폴더의 CSS와 JavaScript를 연결합니다. -->
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 이동</a>
+  <header class="header wrapper">
+    <a class="logo" href="#home" aria-label="처음으로">W<span>.</span></a>
+    <nav aria-label="주요 메뉴">
+      <a href="#about">소개</a>
+      <a href="#interests">관심사</a>
+      <a href="#practice">연습 기록</a>
+    </nav>
+    <button id="theme-button" class="theme-button" type="button" aria-pressed="false">다크 모드</button>
+  </header>
+
+  <main id="main" class="wrapper">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> MY FIRST WEBSITE</p>
+        <!-- 이름과 소개 문장을 자유롭게 바꿔 보세요. -->
+        <h1 id="hero-title">안녕하세요,<br>차우견입니다<span class="accent">.</span></h1>
+        <p class="hero-description">작은 호기심을 하나씩 배움으로.<br>나를 소개하는 첫 웹사이트를 만들고 있어요.</p>
+        <a class="primary-link" href="#about">조금 더 알아보기 <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="profile-art" role="img" aria-label="첫 웹사이트를 표현한 초록색 프로필 일러스트">
+        <span class="art-label">HELLO, WORLD!</span>
+        <div class="orbit" aria-hidden="true"></div>
+        <div class="avatar" aria-hidden="true"><span>우견</span><span class="avatar-face">:)</span></div>
+        <span class="art-star" aria-hidden="true">✳</span>
+        <span class="art-caption">배우는 중, 자라는 중.</span>
+      </div>
+    </section>
+
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div><p class="eyebrow">01 / ABOUT ME</p><h2 id="about-title">조금씩 알아가는 나</h2></div>
+      <div class="section-content">
+        <p class="lead">처음이라 서툴러도,<br>직접 해보면서 배우고 싶어요.</p>
+        <p>이곳은 저를 소개하고 배운 것을 기록하는 작은 공간입니다. HTML로 내용을 채우고 CSS로 꾸미고 JavaScript로 움직임을 더하고 있어요.</p>
+        <p class="edit-note">아래 관심사와 연습 기록은 예시입니다. 나만의 이야기로 바꿔 보세요.</p>
+      </div>
+    </section>
+
+    <section id="interests" class="section" aria-labelledby="interests-title">
+      <p class="eyebrow">02 / INTERESTS</p>
+      <h2 id="interests-title">요즘 관심 있는 것들</h2>
+      <div class="interest-grid">
+        <article class="interest"><span class="item-number">01</span><h3>새로운 배움</h3><p>몰랐던 것을 이해하는 순간의 즐거움을 모아가고 싶어요.</p></article>
+        <article class="interest"><span class="item-number">02</span><h3>직접 만들기</h3><p>작은 아이디어라도 손으로 만들어 보며 경험을 쌓아요.</p></article>
+        <article class="interest"><span class="item-number">03</span><h3>일상의 기록</h3><p>좋았던 순간과 배운 내용을 나만의 언어로 남겨요.</p></article>
+      </div>
+    </section>
+
+    <section id="practice" class="section practice" aria-labelledby="practice-title">
+      <div><p class="eyebrow">03 / LEARNING LOG</p><h2 id="practice-title">첫 번째 연습</h2></div>
+      <div class="section-content">
+        <span class="tag">예시 프로젝트</span>
+        <h3>나의 첫 자기소개 사이트</h3>
+        <p>세 개의 파일을 연결해서 하나의 페이지를 만들었어요. 다음 목표는 GitHub에 올리고 GitHub Pages로 배포하는 것입니다.</p>
+        <ul class="tech-list" aria-label="사용 기술"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      </div>
+    </section>
+
+    <section class="hello-section" aria-labelledby="hello-title">
+      <p class="eyebrow">NICE TO MEET YOU</p>
+      <h2 id="hello-title">들러주셔서 반가워요.</h2>
+      <p>아래 버튼으로 짧은 인사를 받아보세요.</p>
+      <button class="primary-link" id="hello-button" type="button">인사 받기 <span aria-hidden="true">↗</span></button>
+      <p id="hello-message" class="hello-message" role="status" aria-live="polite"></p>
+      <noscript><p>JavaScript를 켜면 인사 버튼과 테마 전환을 사용할 수 있어요.</p></noscript>
+    </section>
+  </main>
+  <footer class="wrapper footer"><span>© <span id="year">2026</span> 차우견</span><span>나의 작은 웹 공간 <span class="accent" aria-hidden="true">↗</span></span></footer>
+</body>
